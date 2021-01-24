@@ -7,16 +7,13 @@ import shutil
 
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import KFold, train_test_split, cross_val_score
+from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, f1_score
 
-from skimage import feature, filters
+from skimage import feature
 from skimage.transform import resize
 from skimage.io import imread
-from pylab import imshow, show 
-from matplotlib import pyplot as plt
-import matplotlib
 
 ### Variables ###
 images_per_class = 1000
